@@ -1,21 +1,22 @@
-import upperFirst from 'lodash/upperFirst';
-import camelCase from 'lodash/camelCase';
-import Vue from 'vue';
-import App from './App.vue';
-import router from './router';
-import store from './store';
-import i18n from './i18n';
-const requireComponent = require.context('./components', false, /Base[A-Z]\w+\.(vue|js)$/);
-requireComponent.keys().forEach(fileName => {
-    const componentConfig = requireComponent(fileName);
-    const componentName = upperFirst(camelCase(fileName.replace(/^\.\/(.*)\.\w+$/, '$1')));
-    Vue.component(componentName, componentConfig.default || componentConfig);
+"use strict";
+exports.__esModule = true;
+var upperFirst_1 = require("lodash/upperFirst");
+var camelCase_1 = require("lodash/camelCase");
+var vue_1 = require("vue");
+var App_vue_1 = require("./App.vue");
+var router_1 = require("./router");
+var store_1 = require("./store");
+var i18n_1 = require("./i18n");
+var requireComponent = require.context('./components', false, /Base[A-Z]\w+\.(vue|js)$/);
+requireComponent.keys().forEach(function (fileName) {
+    var componentConfig = requireComponent(fileName);
+    var componentName = upperFirst_1["default"](camelCase_1["default"](fileName.replace(/^\.\/(.*)\.\w+$/, '$1')));
+    vue_1["default"].component(componentName, componentConfig["default"] || componentConfig);
 });
-Vue.config.productionTip = false;
-new Vue({
-    router,
-    store,
-    i18n,
-    render: (h) => h(App)
+vue_1["default"].config.productionTip = false;
+new vue_1["default"]({
+    router: router_1["default"],
+    store: store_1["default"],
+    i18n: i18n_1["default"],
+    render: function (h) { return h(App_vue_1["default"]); }
 }).$mount('#app');
-//# sourceMappingURL=main.js.map

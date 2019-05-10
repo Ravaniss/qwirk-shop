@@ -1,7 +1,9 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
-Vue.use(Vuex);
-export default new Vuex.Store({
+"use strict";
+exports.__esModule = true;
+var vue_1 = require("vue");
+var vuex_1 = require("vuex");
+vue_1["default"].use(vuex_1["default"]);
+exports["default"] = new vuex_1["default"].Store({
     state: {
         user: {
             id: 'abc',
@@ -10,20 +12,20 @@ export default new Vuex.Store({
         count: 0,
     },
     mutations: {
-        INCREMENT_COUNT(state, value) {
+        INCREMENT_COUNT: function (state, value) {
             state.count += value;
         },
     },
     getters: {
-        userName: (state) => state.user.name,
-        count: (state) => state.count,
+        userName: function (state) { return state.user.name; },
+        count: function (state) { return state.count; },
     },
     actions: {
-        updateCount({ state, commit }, value) {
+        updateCount: function (_a, value) {
+            var state = _a.state, commit = _a.commit;
             if (state.user) {
                 commit('INCREMENT_COUNT', value);
             }
         },
     },
 });
-//# sourceMappingURL=store.js.map
