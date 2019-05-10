@@ -8,12 +8,12 @@
 <script lang="ts">
   import { Vue, Component, Prop } from 'vue-property-decorator'
 
-  @Component()
+  @Component({})
   export default class BaseInput extends Vue {
-    @Prop({default: ''}) label: string
-    @Prop() value: [String, Number]
+    @Prop({default: ''}) label?: string;
+    @Prop() value?: [String, Number];
 
-    updateValue(event) {
+    updateValue(event: any) {
       this.$emit('input', event.target.value)
     }
   }

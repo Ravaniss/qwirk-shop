@@ -77,6 +77,7 @@ export default class Home extends Vue {
         console.log(response.data)
       })
       .catch(error => {
+        this.$refs.topProgress.fail()
         console.log(error)
       })
   }

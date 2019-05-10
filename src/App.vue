@@ -5,6 +5,7 @@
       <router-link :to="{ name: 'about' }">About</router-link> |
       <router-link :to="{ name: 'user', params: { username: 'Max'}}">User</router-link>
     </div>
+    <h1>Hello world ! :D</h1>
     <router-view/>
   </div>
 </template>
