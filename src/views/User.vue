@@ -6,9 +6,8 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator'
-// import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
 
-@Component()
+@Component
 export default class User extends Vue {
   @Prop() !username: string
 }
