@@ -1,4 +1,5 @@
 # qwirk-shop
+Shop qwirk to sell items and earn moneeyyyyyyyyyy
 
 ## Project setup
 ```
