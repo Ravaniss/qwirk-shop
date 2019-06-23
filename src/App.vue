@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="outContent">
+    <div class="outContent navBar">
       <div class="content">
         <div id="nav">
           <router-link :to="{ name: 'home' }" tag="div" class="logo"></router-link>
@@ -27,9 +27,18 @@
 </script>
 
 <style lang="scss">
+  .outContent.navBar {
+    height: 100%;
+    background-image: url('assets/img/background/bckg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   div#nav {
     display: flex;
     align-items: center;
+    height: 76px;
+    background: #FFF;
 
     div {
       margin-right: 30px;
@@ -43,10 +52,11 @@
       height: 30px;
       width: 30px;
       border: solid grey 1px;
+      margin-left:15px;
     }
 
     div#loginImg {
-      background-image: url('./assets/login.svg');
+      background-image: url('assets/img/svg/login.svg');
       height: 25px;
       width: 25px;
       background-size: 25px;
@@ -54,13 +64,11 @@
     }
 
     div#cartImg {
-      background-image: url('./assets/cart.svg');
+      background-image: url('assets/img/svg/cart.svg');
       height: 25px;
       width: 30px;
       background-size: 30px;
       background-repeat: no-repeat;
     }
   }
-
-
 </style>
