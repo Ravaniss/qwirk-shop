@@ -32,6 +32,7 @@
     background-image: url('assets/img/background/bckg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 50px;
   }
 
   div#nav {
