@@ -6,6 +6,7 @@
     <BaseButton type="submit" buttonClass="fill-gradient">Submit</BaseButton>
     <BaseButton @click="test()" buttonClass="fill-gray">Vendre</BaseButton>-->
 
+
   </div>
 </template>
 
