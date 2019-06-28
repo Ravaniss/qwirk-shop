@@ -1,42 +1,42 @@
 {
 	"shirts": [
 		{
-			"id": 1,
+			"id": 0,
 			"image": "first.png",
 			"text": "Red five",
 			"price": "$25",
 			"quantity": 5
 		},
 		{
-			"id": 2,
+			"id": 1,
 			"image": "second.png",
 			"text": "Leia Organa",
 			"price": "$30",
 			"quantity": 5
 		},
 		{
-			"id": 3,
+			"id": 2,
 			"image": "third.png",
 			"text": "Donté",
 			"price": "$30",
 			"quantity": 5
 		},
 		{
-			"id": 4,
+			"id": 3,
 			"image": "four.png",
 			"text": "Transistor",
 			"price": "$35",
 			"quantity": 5
 		},
 		{
-			"id": 5,
+			"id": 4,
 			"image": "five.png",
 			"text": "Captain",
 			"price": "$30",
 			"quantity": 5
 		},
 		{
-			"id": 6,
+			"id": 5,
 			"image": "six.png",
 			"text": "Gore girl",
 			"price": "$40",
