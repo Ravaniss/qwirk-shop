@@ -28,10 +28,9 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
-      path: '/test/:username',
-      name: 'user',
-      component: User,
-      props: true
+      path: '/shirt/:id',
+      name: 'shirt',
+      component: () => import(/* webpackChunkName: "about" */ './views/Shirt.vue')
     }
   ]
 })
