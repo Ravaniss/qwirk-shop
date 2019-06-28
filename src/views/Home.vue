@@ -8,8 +8,8 @@
     <div class="outContent">
       <div class="content">
         <div class="shirts">
-          <div v-for="shirt in shirts" id="vfor">
-            <a href="">
+          <div v-for="(shirt, i) in shirts" id="vfor">
+            <router-link :to="{ name: 'shirt', params: { id: i } }">
               <div class="img"
                    :style="{ 'background-image': 'url(' + require('../assets/img/teeshirt/' + shirt.image) + ')' }">
               </div>
@@ -17,7 +17,7 @@
                 <h1>{{ shirt.text }}</h1>
                 <span>{{ shirt.price }}</span>
               </div>
-            </a>
+            </router-link>
           </div>
         </div>
       </div>
