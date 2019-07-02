@@ -1,10 +1,13 @@
 <template>
   <div class="outContent">
-    <div class="content">
-        <div class="img"
-             :style="{ 'background-image': 'url(' + require('../assets/img/teeshirt/' + img) + ')' }">
-        </div>
-        {{ text }} - {{ price }}
+    <div class="content row">
+      <div class="img one"
+           :style="{ 'background-image': 'url(' + require('../assets/img/teeshirt/' + img) + ')' }">
+      </div>
+      <div class="infos">
+        <h1>{{ text }}</h1>
+        <span>{{ price }}</span>
+      </div>
     </div>
   </div>
 </template>
@@ -30,3 +33,21 @@
     }
   }
 </script>
+
+<style lang="scss">
+  .img.one {
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 630px;
+    width: 560px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: #eeeeee;
+  }
+
+  .infos {
+    flex: 1;
+  }
+</style>
