@@ -15,6 +15,11 @@
       </div>
     </div>
     <router-view/>
+
+    <div class="outContent" id="footer">
+      <div class="content">
+      </div>
+    </div>
   </div>
 </template>
 
@@ -71,5 +76,10 @@
       background-size: 30px;
       background-repeat: no-repeat;
     }
+  }
+
+  #footer {
+    background-color: grey;
+    height: 100px;
   }
 </style>
